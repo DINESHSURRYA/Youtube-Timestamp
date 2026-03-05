@@ -1,8 +1,8 @@
 # YouTube Timestamp Bookmarker
 
-<video src="Video%20Project%201.mp4" width="100%" autoplay loop muted controls></video>
+<video src="https://github.com/DINESHSURRYA/Youtube-Timestamp/raw/main/demo.mp4" width="100%" autoplay loop muted playsinline></video>
 <br>
-<em>Watch the extension in action!</em>
+<em>Watch the extension in action! If the video does not load automatically, <a href="https://github.com/DINESHSURRYA/Youtube-Timestamp/blob/main/demo.mp4">click here to view it</a>.</em>
 
 A Google Chrome Extension that allows users to bookmark specific timestamps in YouTube videos and navigate back to them easily.
 
