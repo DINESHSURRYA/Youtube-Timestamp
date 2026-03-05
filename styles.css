@@ -1,0 +1,119 @@
+/* Main body styling for the extension popup window */
+body {
+    font-family: 'Orbitron', sans-serif;
+    /* Use a futuristic font */
+    width: 300px;
+    /* Fixed width for the popup */
+    padding: 15px;
+    /* Dark space-themed gradient background */
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    color: #ffffff;
+    /* White text for readability */
+    text-align: center;
+    border-radius: 12px;
+    /* Subtle outer glow effect */
+    box-shadow: 0px 0px 20px rgba(173, 216, 230, 0.5);
+}
+
+/* Styling for the main header */
+h3 {
+    color: #12c2e9;
+    /* Cyan highlight color */
+    text-transform: uppercase;
+    text-shadow: 0 0 12px rgba(18, 194, 233, 0.8);
+    /* Neon glow effect */
+}
+
+/* Global button styling */
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    /* Vibrant magenta-to-cyan gradient background */
+    background: linear-gradient(135deg, #12c2e9, #c471ed);
+    border: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 8px;
+    /* Smooth transition for hover effects */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(18, 194, 233, 0.6);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Remove default list styles */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Individual bookmark item styling */
+li {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Darker translucent background for items */
+    background: linear-gradient(135deg, #1b1b3a, #30356b);
+    border-radius: 8px;
+    margin: 10px 0;
+    box-shadow: 0px 2px 8px rgba(0, 191, 255, 0.6);
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+/* Hover effect for bookmark items */
+li:hover {
+    transform: translateY(-2px) scale(1.02);
+    /* Slight lift and scale up */
+    box-shadow: 0px 4px 12px rgba(0, 191, 255, 0.9);
+}
+
+/* Highlighted timestamp text box */
+.timestamp-text {
+    background-color: #ffcc00;
+    /* Bright yellow box */
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: #000;
+    /* Black text for contrast */
+}
+
+/* Hover effect for the timestamp text */
+.timestamp-text:hover {
+    background-color: #ff9900;
+    transform: scale(1.1);
+}
+
+/* Thumbnail image styling */
+.thumbnail {
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+/* "Go" button specific styling (Green theme) */
+.go-btn {
+    background: linear-gradient(135deg, #00ff99, #009966);
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.go-btn:hover {
+    background: linear-gradient(135deg, #00ff66, #008855);
+}
+
+/* "Delete" button specific styling (Red theme) */
+.delete-btn {
+    background: linear-gradient(135deg, #ff3131, #d7263d);
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.delete-btn:hover {
+    background: linear-gradient(135deg, #ff5757, #ff0000);
+}

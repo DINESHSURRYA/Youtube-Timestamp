@@ -1,0 +1,37 @@
+
+
+Thought for 10s
+
+
+
+
+
+
+
+
+
+
+
+
+Standard JSON files (like 
+manifest.json
+) strictly do not support comments (using // or /* */). If I were to add comments inside the file itself, Chrome would see it as "Invalid JSON" and the extension would stop working immediately.
+
+Since I cannot put the explanation inside the manifest.json file without breaking it, I have created a dedicated explanation file for you called MANIFEST_GUIDE.md in your project folder. This file breaks down every single line of your manifest.
+
+📄 Created Guide: MANIFEST_GUIDE.md
+I've added the following detailed breakdown to a new file in your directory:
+
+Line	Key	Detailed Explanation
+2	"manifest_version": 3	This is the most important line. It tells Chrome to use the newest extension standards (Manifest V3), which provide better security and performance.
+3	"name": "..."	The name that appears in the Chrome Web Store and the chrome://extensions page.
+4	"version": "1.0"	Your extension's version. You must increase this number whenever you update the extension.
+5	"description": "..."	A short summary of what the extension does, shown to users before they install it.
+6	"permissions"	Lists special API access the extension needs: • storage: to save your bookmarks.• tabs: to see the URL of the current page.• scripting: to run code on the YouTube page.
+7	"host_permissions"	Restricts the extension so it can only "see" and interact with youtube.com links. This is for user privacy.
+8-11	"action"	Defines what happens when the icon is clicked. • default_popup: Links to the UI (popup.html).• default_icon: The icon shown in the toolbar.
+12-14	"background"	Sets up the "Service Worker" (background.js). This is a script that runs in the background even when the popup is closed.
+15-19	"icons"	Provides different sizes of your icon (16px for favicon, 48px for settings, 128px for the store).
+How to see the explanation in your files:
+Open MANIFEST_GUIDE.md in your editor to read this breakdown anytime.
+I have already updated background.js, content.js, popup.js, popup.html, and styles.css with detailed internal comments as they all support them!
